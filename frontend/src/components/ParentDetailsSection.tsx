@@ -65,7 +65,7 @@ const ParentDetailsSection = (props: ParentDetailsSectionInterface) => {
             {details ? (
                 Object.keys(details).map((field) => (
                     <div key={field} style={styles.detailContainer}>
-                        <span style={styles.detailTitle} translate="yes" title={convertToReadableString(field)}>
+                        <span style={styles.detailTitle} translate="yes" title= {convertToReadableString(field)} >
                             { convertToReadableString(translations[field])}
                         </span>
                         <InputTag>
