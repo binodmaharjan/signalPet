@@ -167,6 +167,7 @@ const ReportFinding = ({
                             : "text-report-light-gray ",
                     }}
                     translate="yes"
+                    title={finding.name}
                 >{translations[`${finding.name}`]}</div>
             </div>
             <div style={styles.gap25}>

@@ -63,13 +63,13 @@ const ReportBasicInfoSection = () => {
                             paddingRight: "31%",
                         }}
                     >
-                        <span style={styles.segmentTitle} translate="yes" title={translations[reportBasicInfo.service]}>
+                        <span style={styles.segmentTitle} translate="yes" title={reportBasicInfo.service}>
                             {translations[reportBasicInfo.service]}:
                         </span>
                         <span style={styles.segmentContent}>SignalRAY</span>
                     </div>
                     <div style={styles.segmentContainer}>
-                        <span style={styles.segmentTitle} translate="yes" title={translations[reportBasicInfo.date]}>
+                        <span style={styles.segmentTitle} translate="yes" title={reportBasicInfo.date}>
                             {translations[reportBasicInfo.date]}:
                         </span>
                         <span style={styles.segmentContent}>01-01-1994</span>
