@@ -1,3 +1,9 @@
+/**
+ * useTranlation hook to translate text to different languages
+ * 
+ */
+
+
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useLanguage } from '../context/LanguageContext';
