@@ -13,6 +13,10 @@ dotenv.config();
 app.use(express.json());
 app.use(cors());
 
+app.get("/", (req: Request, res: Response) => {
+    res.status(200).json({ message: "Hello World" });
+})
+
 
 app.post("/translate", async (req: Request, res: Response) => {
 
@@ -40,7 +44,7 @@ app.post("/translate", async (req: Request, res: Response) => {
         const translatedText = await TranslateText(q, target);
     
         await RedisCache.getInstance().set(q, target, translatedText);
-        res.status(400).json({translatedText: translatedText});
+        res.status(200).json({translatedText: translatedText});
         
     } catch (error) {
         res.status(400).json({error: "Something went wrong !!!"});
