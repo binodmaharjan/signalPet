@@ -30,9 +30,8 @@ cd <repository-directory>
 
 - **Frontend Services**: Run at [http://localhost:3000]
 - **Backend Services**: Run at [http://localhost:4000]
-- **Start Translibre Docker Services**  Service runs at [http://localhost:5001]
+- **Start libretranslate Docker Services**  Service runs at [http://localhost:5001]
    ```bash
-    // start docker using the command 
     docker run -ti  -p 5001:5000 libretranslate/libretranslate
    ```
 - **Start Redis Docker Service**
