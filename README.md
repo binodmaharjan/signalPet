@@ -54,6 +54,14 @@ cd <repository-directory>
    The users language is stored as language context when the app is opened
   ```
 
+- **Allow the user to see the English version**
+  ```
+  used title attibutes in  span to show english version.
+  When curor is hovered over the translated text. It will show the english version
+
+  <span style={styles.detailTitle} translate="yes" title= {convertToReadableString(field)} >
+  ```
+
 
 
 
