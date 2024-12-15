@@ -9,7 +9,7 @@ Below is a brief guide to help you set up the project environment.
 ### 1. Clone the Repository
 
 ```bash
-git clone 
+git clone https://github.com/binodmaharjan/signalPet
 cd <repository-directory>
 ```
 
@@ -42,10 +42,18 @@ cd <repository-directory>
 - **Why Redis**
  ```
     Redis is an open-source, in-memory key-value store used for caching.
-    Once the translation for the world is available by hitting the libreTranslate API. It will store the result in the cache.
-    So, for next API hit to libreTranslate with the same key word, it wont hit the libreTranslate API, saving the the cost.
+    Once the translation for the word is available by hitting the libreTranslate API. 
+    It will store the result in the cache.
+    So, for next API hit to libreTranslate with the same key word, 
+    it wont hit the libreTranslate API, saving the the cost.
     The key pair used to chaching is "text:language"
  ```
+
+ - **Language Preferences**
+  ```
+   Used LanguageContext to get user's browser preferred language. 
+   The users language is stored as language context when the app is opened
+  ```
 
 
 

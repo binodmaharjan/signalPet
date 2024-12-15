@@ -1,3 +1,11 @@
+
+/**
+ * 
+ * Language Context to get user's browser language
+ * 
+ */
+
+
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
 interface LanguageContextProps {
@@ -14,7 +22,6 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
 
         console.log('navigator.language', navigator.language);  
         const browserLanguage = navigator.language || navigator.languages[0];
-      
         setLanguage(browserLanguage ? browserLanguage.split('-')[0] :'en');
     }, []);
 
