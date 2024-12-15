@@ -45,7 +45,7 @@ cd <repository-directory>
     It will store the result in the cache.
     So, for next API hit to libreTranslate with the same key word, 
     it wont hit the libreTranslate API, saving the the cost.
-    The key pair used to chaching is "text:language"
+    The key pair used to caching is "text:language"
  ```
 
  - **Language Preferences**
